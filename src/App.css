@@ -1,38 +1,108 @@
-.App {
+.header {
+  position: relative;
+  height: 95vh;
+  background-image:
+    linear-gradient(to right, rgba(0, 102, 255, 0.863), rgba(0, 195, 255, 0.863)),
+    url(./assets/mail.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: fadein 3s;
+  animation-fill-mode: forwards;
+}
+
+.logo-sq, .logo-tri {
+  position: absolute;
+  border: 1px solid white;
+  top: 25px;
+  left: 25px;
+  height: 30px;
+  width: 45px;
+  opacity: 0;
+  animation: fadein 2s ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.logo-tri {
+  height: 45px;
+  top: -6px;
+  /* background: white; */
+  transform: rotate(45deg);
+  clip-path: polygon(100% 30%, 100% 100%, 30% 100%);
+}
+
+.header-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heading-primary-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 15px;
+  animation: slidein 2s;
+  animation-fill-mode: forwards;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 16.5px;
+  animation: slidein 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@keyframes slidein {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.btn:link, btn:visited {
+  animation: fadein 2s ease-out 1s;
+  animation-fill-mode: forwards;
+  background: linear-gradient(to right, white 50%, rgba(0, 195, 255, 0.863) 50%);
+  background-size: 210% 110%;
+  background-position:left bottom;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  opacity: 0;
+  padding: 15px 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+
+.btn:hover {
+  background-position: right bottom;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-blue {
+  color: rgba(0, 102, 255, 0.863);
 }
