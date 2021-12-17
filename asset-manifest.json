@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/danielscards/static/css/main.52a12f31.chunk.css",
+    "main.js": "/danielscards/static/js/main.e8574e6d.chunk.js",
+    "main.js.map": "/danielscards/static/js/main.e8574e6d.chunk.js.map",
+    "runtime-main.js": "/danielscards/static/js/runtime-main.7bd907c3.js",
+    "runtime-main.js.map": "/danielscards/static/js/runtime-main.7bd907c3.js.map",
+    "static/js/2.722ad8d0.chunk.js": "/danielscards/static/js/2.722ad8d0.chunk.js",
+    "static/js/2.722ad8d0.chunk.js.map": "/danielscards/static/js/2.722ad8d0.chunk.js.map",
+    "static/js/3.1513618d.chunk.js": "/danielscards/static/js/3.1513618d.chunk.js",
+    "static/js/3.1513618d.chunk.js.map": "/danielscards/static/js/3.1513618d.chunk.js.map",
+    "index.html": "/danielscards/index.html",
+    "static/css/main.52a12f31.chunk.css.map": "/danielscards/static/css/main.52a12f31.chunk.css.map",
+    "static/js/2.722ad8d0.chunk.js.LICENSE.txt": "/danielscards/static/js/2.722ad8d0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/danielscards/static/media/mail.685aecc2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7bd907c3.js",
+    "static/js/2.722ad8d0.chunk.js",
+    "static/css/main.52a12f31.chunk.css",
+    "static/js/main.e8574e6d.chunk.js"
+  ]
+}
